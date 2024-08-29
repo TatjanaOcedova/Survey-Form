@@ -8,9 +8,31 @@
     <p id="description">Thank you for taking the time to help us improve the platform
 <form id="survey-form">
     <fieldset>
-        <label>Name<input id="name" type="text" required></label>
-        <label>Email<input id="email" type="email" required/></label>
+        <label id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label">Age(optional) <input id="number" type="number" min="16" max="66" placeholder="Age"></label>
+        <label>Which option best describes your current role?
+            <select id="dropdown">
+            <option value="">Select current role</option>
+            <option value="1">Full time job</option>
+            <option value="2">Full time learner</option>
+            <option value="3">Other</option>
+
+        </select></label>
+        <label>Would you recommend freeCodeCamp to a friend?
+            <label>Definitely<input type="radio" name="recommend" checked></label>
+            <label> Maybe<input type="radio" name="recommend"></label>
+            <label> Not sure<input type="radio" name="recommend"></label>
+        </label>
+        <label> <input type="checkbox" value="Front-end Projects"> 
+        <input type="checkbox" value="Back-end Projects">
+        <input type="checkbox" value="Data Visualization">
+        <input type="checkbox" value="Challenges">
+        <input type="checkbox" value="Open Sourse Community">
+        </label>
+        <label>Any comments or suggestions? <textarea placeholder="Enter your comment here..."></textarea> </label>
     </fieldset>
+    <input type="submit" value="Submit" />
 </form>
     </p>
   </body>
